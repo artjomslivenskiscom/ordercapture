@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Product List" icon-name="standard:pricebook">
+          <div class="slds-m-around_medium" style="height: 300px;">
+             <lightning-datatable
+                key-field="priceBookEntryId"
+                hide-checkbox-column=true
+                data={data}
+                columns={columns}
+                onrowaction={handleRowAction}>
+             </lightning-datatable>
+          </div>
+          <template if:true={error}>
+             Details: <p>{error}</p>
+          </template>
+    </lightning-card>
+ </template>

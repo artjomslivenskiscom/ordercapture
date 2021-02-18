@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+   <masterLabel>CPQAddProductChannel</masterLabel>
+   <isExposed>true</isExposed>
+   <description>This Lightning Message Channel sends selected product details from Product List to CPQ Cart</description>
+   <lightningMessageFields>
+      <fieldName>priceBookEntryId</fieldName>
+      <description>priceBookEntryId To Send</description>
+   </lightningMessageFields>
+   <lightningMessageFields>
+      <fieldName>actions</fieldName>
+      <description>CPQ actions To Send</description>
+   </lightningMessageFields>
+</LightningMessageChannel>
